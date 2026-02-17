@@ -54,8 +54,21 @@
           <svg viewBox="0 0 24 24" width="16" height="16" fill="#b71234" aria-hidden="true" focusable="false"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
         </div>
         <div>
-          <div style="font-family:'Open Sans',Arial,sans-serif;font-size:11px;font-weight:700;text-transform:uppercase;color:#6b7c93;letter-spacing:0.8px;margin-bottom:2px;">Correo electrónico</div>
-          <div style="font-family:'Open Sans',Arial,sans-serif;font-size:14px;font-weight:500;"><a href="/cdn-cgi/l/email-protection#80f0eff2f4e1ecf4f2e1eef3f0e1f2e5eee3e9e1c0f5e3edaee5f3" style="font-family:'Open Sans',Arial,sans-serif;color:#b71234;text-decoration:none;font-weight:600;" onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'"><span class="__cf_email__" data-cfemail="b0c0dfc2c4d1dcc4c2d1dec3c0d1c2d5ded3d9d1f0c5d3dd9ed5c3">[email&#160;protected]</span></a></div>
+          <div style="font-family:'Open Sans',Arial,sans-serif;font-size:11px;font-weight:700;text-transform:uppercase;color:#6b7c93;letter-spacing:0.8px;margin-bottom:4px;">Correo electrónico</div>
+          <!-- Emails montados por JS para evitar la ofuscación de Cloudflare -->
+          <div style="font-family:'Open Sans',Arial,sans-serif;font-size:13px;color:#6b7c93;margin-bottom:2px;">Portal de Transparencia</div>
+          <div style="font-family:'Open Sans',Arial,sans-serif;font-size:14px;font-weight:500;margin-bottom:8px;" id="ucm-email-1"></div>
+          <div style="font-family:'Open Sans',Arial,sans-serif;font-size:13px;color:#6b7c93;margin-bottom:2px;">Solicitudes de acceso a la información pública</div>
+          <div style="font-family:'Open Sans',Arial,sans-serif;font-size:14px;font-weight:500;" id="ucm-email-2"></div>
+          <script>
+            (function(){
+              var u1='portaltransparencia',u2='transparenciaucm',d='ucm.es';
+              var s='font-family:\'Open Sans\',Arial,sans-serif;color:#b71234;text-decoration:none;font-weight:600;';
+              var h='onmouseover="this.style.textDecoration=\'underline\'" onmouseout="this.style.textDecoration=\'none\'"';
+              document.getElementById('ucm-email-1').innerHTML='<a href="mailto:'+u1+'@'+d+'" style="'+s+'" '+h+'>'+u1+'@'+d+'</a>';
+              document.getElementById('ucm-email-2').innerHTML='<a href="mailto:'+u2+'@'+d+'" style="'+s+'" '+h+'>'+u2+'@'+d+'</a>';
+            })();
+          </script>
         </div>
       </div>
 
