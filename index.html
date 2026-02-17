@@ -55,7 +55,7 @@
         </div>
         <div>
           <div style="font-family:'Open Sans',Arial,sans-serif;font-size:11px;font-weight:700;text-transform:uppercase;color:#6b7c93;letter-spacing:0.8px;margin-bottom:2px;">Correo electrónico</div>
-          <div style="font-family:'Open Sans',Arial,sans-serif;font-size:14px;font-weight:500;"><a href="mailto:portaltransparencia@ucm.es" style="font-family:'Open Sans',Arial,sans-serif;color:#b71234;text-decoration:none;font-weight:600;" onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'">portaltransparencia@ucm.es</a></div>
+          <div style="font-family:'Open Sans',Arial,sans-serif;font-size:14px;font-weight:500;"><a href="/cdn-cgi/l/email-protection#80f0eff2f4e1ecf4f2e1eef3f0e1f2e5eee3e9e1c0f5e3edaee5f3" style="font-family:'Open Sans',Arial,sans-serif;color:#b71234;text-decoration:none;font-weight:600;" onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'"><span class="__cf_email__" data-cfemail="b0c0dfc2c4d1dcc4c2d1dec3c0d1c2d5ded3d9d1f0c5d3dd9ed5c3">[email&#160;protected]</span></a></div>
         </div>
       </div>
 
@@ -113,7 +113,7 @@
       <div aria-hidden="true" style="width:36px;height:36px;flex-shrink:0;background:rgba(255,255,255,0.18);border-radius:8px;display:flex;align-items:center;justify-content:center;">
         <svg viewBox="0 0 24 24" width="18" height="18" fill="#fff" aria-hidden="true" focusable="false"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
       </div>
-      <h2 id="ficha-personal-titulo" style="font-family:'Open Sans',Arial,sans-serif;font-size:15px;font-weight:700;color:#fff;margin:0;"><a href="https://www.ucm.es/directorio/?eid=2598" target="_blank" rel="noopener" style="font-family:'Open Sans',Arial,sans-serif;color:#fff;text-decoration:none;" onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'">Dirección de Coordinación y Transparencia</a></h2>
+      <h2 id="ficha-personal-titulo" style="font-family:'Open Sans',Arial,sans-serif;font-size:15px;font-weight:700;color:#fff;margin:0;">Oficialía Mayor</h2>
     </div>
     <div style="padding:20px;">
 
@@ -134,12 +134,12 @@
       <div role="tablist" aria-label="Personal por área" style="display:flex;margin-bottom:16px;border-bottom:2px solid #e0e6ef;">
         <button role="tab" id="tab-btn-transparencia" aria-controls="tab-panel-transparencia" aria-selected="true"
           onclick="ucmTab('transparencia')"
-          style="font-family:'Open Sans',Arial,sans-serif;background:none;border:none;border-bottom:3px solid #b71234;cursor:pointer;padding:10px 18px;font-size:13px;font-weight:600;color:#b71234;margin-bottom:-2px;">
+          style="font-family:'Open Sans',Arial,sans-serif;background:none;border-top:none;border-left:none;border-right:none;border-bottom:3px solid #b71234;cursor:pointer;padding:10px 18px;font-size:13px;font-weight:600;color:#b71234;margin-bottom:-2px;outline:none;">
           Personal Transparencia
         </button>
         <button role="tab" id="tab-btn-protocolo" aria-controls="tab-panel-protocolo" aria-selected="false"
           onclick="ucmTab('protocolo')"
-          style="font-family:'Open Sans',Arial,sans-serif;background:none;border:none;border-bottom:3px solid transparent;cursor:pointer;padding:10px 18px;font-size:13px;font-weight:600;color:#6b7c93;margin-bottom:-2px;">
+          style="font-family:'Open Sans',Arial,sans-serif;background:none;border-top:none;border-left:none;border-right:none;border-bottom:3px solid transparent;cursor:pointer;padding:10px 18px;font-size:13px;font-weight:600;color:#6b7c93;margin-bottom:-2px;outline:none;">
           Personal Protocolo
         </button>
       </div>
@@ -260,10 +260,12 @@ function ucmTab(area) {
     var btn   = document.getElementById('tab-btn-' + p);
     var panel = document.getElementById('tab-panel-' + p);
     var on = (p === area);
-    panel.style.display    = on ? 'block' : 'none';
+    panel.style.display         = on ? 'block' : 'none';
     btn.setAttribute('aria-selected', on ? 'true' : 'false');
-    btn.style.color        = on ? '#b71234' : '#6b7c93';
-    btn.style.borderBottom = on ? '3px solid #b71234' : '3px solid transparent';
+    btn.style.color             = on ? '#b71234' : '#6b7c93';
+    btn.style.borderBottomColor = on ? '#b71234' : 'transparent';
+    btn.style.borderBottomWidth = '3px';
+    btn.style.borderBottomStyle = 'solid';
   });
 }
 </script>
